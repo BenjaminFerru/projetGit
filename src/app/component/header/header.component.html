@@ -1,0 +1,11 @@
+<header>
+    <!--synchronisation .html avec .ts-->
+    <input type="text" [(ngModel)]="name"/>
+    <input type="text" [(ngModel)]="prenom"/>
+    <!--événement envoyé vers le ts-->
+    <button (click)="auClic()">OK plop</button>
+    <!--affichage des variables crées dans le ts-->
+    <div *ngIf="isClicked">
+        <p>bonjour {{name}} {{prenom}}</p>
+    </div>
+</header>

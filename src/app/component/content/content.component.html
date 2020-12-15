@@ -1,0 +1,11 @@
+<!--<section>
+    {{article}}
+</section>-->
+
+<!--boucle les liens et renvoie au app.component.html-->
+<section>
+    <div *ngFor="let news of article; index as i">
+        <p [ngClass]="{'news-color': news.name != ''}">{{news.name}}</p>
+        <p>{{news.chiffre}}</p>
+    </div>
+</section>
